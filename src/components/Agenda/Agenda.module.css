@@ -1,0 +1,73 @@
+:root {
+  --blue-dark: #010d23;
+  --blue-medium: #03223f;
+  --blue-light: #038bbb;
+  --off-white: #f0f0d8;
+  --black: #000;
+  --yellow-light: #fccb6f;
+  --yellow-medium: #e19f41;
+}
+.titulo {
+  font-size: 35px;
+}
+.agendaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--blue-medium);
+  color: var(--off-white);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.timelineEvent {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--off-white);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timelineDot {
+  width: 16px;
+  height: 16px;
+  background-color: var(--blue-light);
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.agendaContainer:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timelineContent {
+  margin: 0;
+  color: var(--blue-dark);
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .timelineEvent {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .timelineEvent {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+}

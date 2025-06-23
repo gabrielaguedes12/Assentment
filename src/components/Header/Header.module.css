@@ -1,0 +1,84 @@
+:root {
+  --blue-dark: #010d23;
+  --blue-medium: #03223f;
+  --blue-light: #038bbb;
+  --off-white: #f0f0d8;
+  --black: #000;
+  --yellow-light: #fccb6f;
+  --yellow-medium: #e19f41;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--blue-dark);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding-bottom: 20px;
+}
+
+.nomeCandidato {
+  margin: 0;
+  font-size: 45px;
+  margin-top: 10px;
+  text-align: center;
+  color: var(--off-white);
+}
+
+.menuButton {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  font-size: 30px;
+  margin-top: 20px;
+  left: 20px;
+  color: var(--off-white);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.nav a {
+  color: var(--off-white);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--blue-light);
+  transition: color 0.3s;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .open {
+    display: flex;
+  }
+}

@@ -1,0 +1,21 @@
+:root {
+  --blue-dark: #010d23;
+  --blue-medium: #03223f;
+  --blue-light: #038bbb;
+  --off-white: #f0f0d8;
+  --black: #000;
+  --yellow-light: #fccb6f;
+  --yellow-medium: #e19f41;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+  background-color: var(--off-white);
+  color: var(--black);
+}

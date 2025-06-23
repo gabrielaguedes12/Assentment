@@ -1,0 +1,49 @@
+:root {
+  --blue-dark: #010d23;
+  --blue-medium: #03223f;
+  --blue-light: #038bbb;
+  --off-white: #f0f0d8;
+  --black: #000;
+  --yellow-light: #fccb6f;
+  --yellow-medium: #e19f41;
+}
+
+.biografia {
+  padding: 32px 16px;
+  background-color: var(--blue-medium);
+  color: var(--off-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.texto {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .texto {
+    max-width: 600px;
+    margin-left: 32px;
+  }
+}
